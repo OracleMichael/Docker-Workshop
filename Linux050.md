@@ -218,10 +218,10 @@ You will now create a Linux based Compute instance using the public key you just
   - Image Operating System: Oracle Linux 7.6 or 7.7 (Default)
     ![](images/create-compute.png)
   - Expand the **Show Shape, Network and Storage Options** button, accept the defaults, and ensure the `Always Free Eligible` options are chosen:
-    - Availability Domain: AD 1 or 2 (Use default)
-    - Shape Type: Virtual Machine (Default)
-    - Shape: VM.Standard2.1 (Default)
-      ![](images/create-compute-2u1.png)
+  - Availability Domain: AD 1 or 2 (Use default)
+  - Shape Type: Virtual Machine (Default)
+  - Shape: VM.Standard2.1 (Default)
+    ![](images/create-compute-2u1.png)
   - Select the `demo` compartment you created.  
     ![](images/create-compute-3u1.png)
   - The VCN network `DockerVCN` you created should populate.
@@ -231,7 +231,7 @@ You will now create a Linux based Compute instance using the public key you just
   - Leave all boot volume options unchecked (accept all defaults)
     ![](images/create-compute-6u1.png)
 
-- Scroll down furthur on the page to add your PUBLIC SSH Key
+- Scroll down furthur on the page to add your PUBLIC SSH Key.
 **NOTE:** You will paste the public key you copied in Step 7 into the SSH KEY field by selecting the **Paste SSH Keys** radio button. `The public key should all be on ONE LINE`
 
   ![](images/050Linux/28.PNG)
@@ -313,7 +313,7 @@ Docker and Git are required for the subsuquent labs. You will install the Docker
 
   ![](images/050Linux/40.PNG)
 
-- The `su - opc` command brings you back to the original `opc` user context that you were in the moment you successfully SSH'd into the compute instance. **Run** the following commands to verify good installations:
+- The `su - opc` command brings you to a new context identical to that of the original `opc` user context upon successfully SSH'ing into the compute instance. **Run** the following commands to verify good installations:
 
   ```
   su - opc

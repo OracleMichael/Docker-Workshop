@@ -478,7 +478,7 @@ Copy a background image file into the running AlphaOfficeUI container. This file
 
   Example: `docker cp /home/opc/AlphaOfficeSetup/dark_blue.jpg alphaofficeui:/pipeline/source/public/Images`
 
-### **STEP 2**: Install the VIM editor in the UI container
+### **STEP 2**: Install/Update the VIM editor in the UI container
 
 Even though the orginal AlphaOfficeUI image could have been set up ahead of time with any needed client tools we're adding the the environment on-the-fly to give you some idea that it can be done
 
@@ -487,6 +487,8 @@ Even though the orginal AlphaOfficeUI image could have been set up ahead of time
   ```
   docker exec -it alphaofficeui bash
   ```
+
+  At this point, you can run `which vim` to see which version of VIM the `alphaofficeui` container is. If the command returns something similar to `/usr/bin/vim`, then verify that "**dark_blue.jpg**" is in the container by **running** `ls /pipeline/source/public/Images`, and you can opt to skip to **STEP 3**.
 
 - **Type** the following:
 
